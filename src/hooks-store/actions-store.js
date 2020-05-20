@@ -21,7 +21,7 @@ const configureStore = () => {
 
 // Set local storage.
 const saveStorage = (data) => {
-  localStorage.setItem("data", JSON.stringify(data));
+  //localStorage.setItem("data", JSON.stringify(data));
 }
 
 export default configureStore;
