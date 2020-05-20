@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route } from 'react-router-dom';
 import './App.css';
+
+import AppBar from '@material-ui/core/AppBar';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
+
+import LoginScreen from './containers/LoginScreen/LoginScreen';
+import SignUpScreen from './containers/SignUpScreen/SignUpScreen';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AppBar position="static" color="primary">
+        <Toolbar>
+          <Typography variant="h6">
+            Wand
+          </Typography>
+        </Toolbar>
+      </AppBar>
+
+      <main>
+        <Route path="/" exact component={ LoginScreen } />
+        <Route path="/sign" component={ SignUpScreen } />
+      </main>
     </div>
   );
 }
