@@ -1,0 +1,35 @@
+.signup-screen-container {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20%;
+
+    .card {
+        width: 90%;
+        align-items: flex-start;
+        justify-content: start;
+
+        form {
+            margin-top: 8px;
+            margin-right: 12px;
+        }
+    
+        .input-text {
+            margin-top: 16px;
+        }
+    
+        .label {
+            background-color: white;
+            padding-right: 8px;
+        }
+    
+        .buttons-container {
+            margin-top: 24px;
+            display:flex;
+            justify-content:flex-start; 
+            flex-direction: column;
+        }
+    }
+}
+
