@@ -8,6 +8,7 @@ import Typography from '@material-ui/core/Typography';
 
 import LoginScreen from './containers/LoginScreen/LoginScreen';
 import SignUpScreen from './containers/SignUpScreen/SignUpScreen';
+import HomeScreen from './containers/HomeScreen/HomeScreen';
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
 
       <main>
         <Route path="/" exact component={ LoginScreen } />
-        <Route path="/sign" component={ SignUpScreen } />
+        <Route path="/signup" component={ SignUpScreen } />
+        <Route path="/hogwarts" component={ HomeScreen } />
       </main>
     </div>
   );
